@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="icon" type="image/x-icon" href="https://files.catbox.moe/297m46.jpg">
+    <link rel="manifest" href="assets/img/site.webmanifest">
+
+    <!--=============== BOXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+    
+        <!-- SweetAlert2 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <title> Nizar | Portfolio </title>
+</head>
+
+<body>
+      <!-- Audio Element -->
+    <audio id="audio" src="me.mp3" preload="auto"></audio>
+
+
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Nizar</a>
+
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class='bx bx-home-alt'></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class='bx bx-user'></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#edu" class="nav__link">
+                            <i class='bx bxs-graduation'></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class='bx bx-book'></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#work" class="nav__link">
+                            <i class='bx bx-briefcase'></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class='bx bx-message-square-dots'></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Theme Change Button -->
+            <i class='bx bx-moon change-theme' id="theme-button"></i>
+        </nav>
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+        <!--=============== HOME ===============-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <span class="home__greeting">
+                        Halo, Saya
+                    </span>
+                    <h1 class="home__name">
+                        Nizar
+                    </h1>
+                    <h3 class="home__education">
+                        Software Developer
+                    </h3>
+
+                    <div class="home__buttons">
+                        <a download="" href="./assets/pdf/CV_Creative_Fatih_Firdaus.pdf" class="button button--ghost">
+                            Download CV
+                        </a>
+                        <a href="#about" class="button">Tentang Saya</a>
+                    </div>
+                </div>
+
+                <div class="home__main">
+                    <img src="https://files.catbox.moe/cxoscg.jpg" alt="" class="home__img">
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.youtube.com/@zarxdmods" class="home__social-link">
+                        <i class='bx bxl-youtube'></i>
+                    </a>
+                    <a href="https://tiktok.com/@zarxdmods" class="home__social-link">
+                        <i class='bx bxl-tiktok'></i>
+                    </a>
+                    <a href="https://www.instagram.com/zarxdmods" class="home__social-link">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+                </div>
+
+                <a href="#about" class="home__scroll">
+                    <i class='bx bx-mouse home__scroll-icon'></i>
+                    <span class="home__scroll-name">Gulir Kebawah</span>
+                </a>
+            </div>
+        </section>
+
+        <!--=============== ABOUT ===============-->
+        <section class="about section" id="about">
+            <span class="section__subtitle">Intro</span>
+            <h2 class="section__title">Tentang Saya</h2>
+
+            <div class="about__container container grid">
+                <div class="about__wrapper">
+                    <div class="about__handle">
+                        <img src="./assets/img/me001.png" alt="" class="about__img">
+                    </div>
+                </div>
+
+                <div class="about__data">
+
+                    <p class="about__description">
+                        Seorang developer yang tertarik dengan teknologi dan selalu ingin mengembangkan diri di bidang tersebut.
+                    </p>
+                    <a href="#contact" class="button">Kontak Saya</a>
+                </div>
+        </section>
+
+        <!--=============== PENDIDIKAN ===============-->
+        <section class="design-section" id="edu">
+            <span class="section__subtitle">Sekolah</span>
+            <h2 class="section__title">Pendidikan</h2>
+            <div class="timeline">
+
+                <div class="timeline-component timeline-content">
+                    <h3>SMA SINAR HUSNI</h3>
+                    <p class="home__education">Sekolah Menengah Pertama </p>
+                    <p class="home__education">2024 - Sekarang</p>
+                </div>
+                <div class="timeline-middle">
+                    <div class="timeline-circle"></div>
+                </div>
+                <div class="timeline-empty">
+                </div>
+                <div class="timeline-empty">
+                </div>
+                <div class="timeline-middle">
+                    <div class="timeline-circle"></div>
+                </div>
+                <div class="timeline-component timeline-content">
+                    <h3>SMP SINAR HUSNI</h3>
+                    <p class="home__education">Sekolah Menengah Pertama</p>
+                    <p class="home__education">2021 - 2024</p>
+                </div>
+                <div class="timeline-component timeline-content">
+                    <h3>SD Negeri No.106805</h3>
+                    <p class="home__education">Sekolah dasar</p>
+                    <p class="home__education">2015 - 2021</p>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== SKILLS ===============-->
+        <section class="skills section" id="skills">
+            <span class="section__subtitle">Kemampuan</span>
+            <h2 class="section__title">Pengalaman Saya</h2>
+
+            <div class="skills__container container grid">
+                <div class="skills__content">
+                    <h3 class="skills__title">Fullstack Developer</h3>
+
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxl-html5'></i>
+
+                                <div>
+                                    <h3 class="skills__name">HTML</h3>
+                                    <span class="skills__level">Menengah</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class='bx bxl-css3'></i>
+
+                                <div>
+                                    <h3 class="skills__name">CSS</h3>
+                                    <span class="skills__level">Dasar</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class='bx bxl-javascript'></i>
+
+                                <div>
+                                    <h3 class="skills__name">JavaScipt</h3>
+                                    <span class="skills__level">Menengah</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class='bx bxl-nodejs' ></i>
+
+                                <div>
+                                    <h3 class="skills__name">NodeJS</h3>
+                                    <span class="skills__level">Menengah</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxl-bootstrap'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Bootstrap</h3>
+                                    <span class="skills__level">Menengah</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class='bx bxl-github'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Github</h3>
+                                    <span class="skills__level">Menengah</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class='bx bxl-tailwind-css'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Tailwind</h3>
+                                    <span class="skills__level">Menengah</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class='bx bxl-php'></i>
+
+                                <div>
+                                    <h3 class="skills__name">PHP</h3>
+                                    <span class="skills__level">Menengah</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        </section>
+
+        <!--=============== WORK ===============-->
+        <section class="work section" id="work">
+            <span class="section__subtitle">Portofolio Saya</span>
+            <h2 class="section__title">Karya Terbaru Saya</h2>
+
+            <div class="work__filters">
+                <span class="work__item active-work" data-filter="all">All</span>
+                <span class="work__item" data-filter=".sites">Sites</span>
+                <span class="work__item" data-filter=".apps">Apps</span>
+                <span class="work__item" data-filter=".ui">UI</span>
+            </div>
+
+            <div class="work__container container grid">
+                <div class="work__card mix sites">
+                    <img src="./assets/img/landing_tree.png" alt="" class="work__img">
+
+                    <h3 class="work__title">Landing Page</h3>
+
+                    <a href="-----" target="_blank" class="work__button">
+                        Demo
+                        <i class='bx bx-right-arrow-alt work__icon'></i>
+                    </a>
+                </div>
+                <div class="work__card mix apps sites">
+                    <img src="./assets/img/anime_stream.png" alt="" class="work__img">
+
+                    <h3 class="work__title">Anime Streaming</h3>
+
+                    <a href="----" target="_blank" class="work__button">
+                        Demo
+                        <i class='bx bx-right-arrow-alt work__icon'></i>
+                    </a>
+                </div>
+                <div class="work__card mix apps sites">
+                    <img src="./assets/img/gallery_app.png" alt="" class="work__img">
+
+                    <h3 class="work__title">Gallery App</h3>
+
+                    <a href="------" target="_blank" class="work__button">
+                        Demo
+                        <i class='bx bx-right-arrow-alt work__icon'></i>
+                    </a>
+                </div>
+                <div class="work__card mix apps sites">
+                    <img src="./assets/img/rest_api.png" alt="" class="work__img">
+
+                    <h3 class="work__title">Rest API</h3>
+
+                    <a href="----" target="_blank" class="work__button">
+                        Demo
+                        <i class='bx bx-right-arrow-alt work__icon'></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== CONTACT ===============-->
+        <section class="contact section" id="contact">
+            <span class="section__subtitle">Info Lengkap</span>
+            <h2 class="section__title">Kontak Saya</h2>
+
+            <div class="contact__container container grid">
+
+                <div class="contact__info">
+                    <div class="contact__card">
+                        <i class='bx bx-mail-send contact__card-icon'></i>
+                        <h3 class="contact__card-title">Email</h3>
+                        <span class="contact__card-data">zarxdmods
+                        @gmail.com</span>
+
+                        <a href="mailto:zarxdmods@gmail.com" target="_blank" class="contact__button">
+                            Kirim Email
+                            <i class='bx bx-right-arrow-alt contact__button-icon'></i>
+                        </a>
+                    </div>
+                    <div class="contact__card">
+                        <i class='bx bxl-whatsapp contact__card-icon'></i>
+                        <h3 class="contact__card-title">Whatsapp</h3>
+                        <span class="contact__card-data">+6283822455492</span>
+
+                        <a href="https://api.whatsapp.com/send/?phone=6283822455492&text=Halo" target="_blank"
+                            class="contact__button">
+                            Kirim Pesan
+                            <i class='bx bx-right-arrow-alt contact__button-icon'></i>
+                        </a>
+                    </div>
+                    <div class="contact__card">
+                        <i class='bx bxl-telegram contact__card-icon'></i>
+                        <h3 class="contact__card-title">Telegram</h3>
+                        <span class="contact__card-data">@zarxdmods</span>
+
+                        <a href="https://t.me/zarxdmods" target="_blank" class="contact__button">
+                            Kirim Pesan
+                            <i class='bx bx-right-arrow-alt contact__button-icon'></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact__content">
+                    <h3 class="contact__title">Saran</h3>
+
+                    <form action="https://formspree.io/f/mjkgqqez" class="contact__form" name="contact" method="POST"
+                        data-netlify="true">
+                        <div class="contact__form-div">
+                            <label for="" class="contact__form-tag">Nama</label>
+                            <input type="text" placeholder="Example: Nizar" class="contact__form-input">
+                        </div>
+                        <div class="contact__form-div">
+                            <label for="" class="contact__form-tag">Email</label>
+                            <input type="email" name="email" placeholder="yourname@example.com"
+                                class="contact__form-input">
+                        </div>
+                        <div class="contact__form-div contact__form-area">
+                            <label for="" class="contact__form-tag">Pesan</label>
+                            <textarea name="message" cols="30" rows="10" placeholder="Tulis Pesan"
+                                class="contact__form-input "></textarea>
+                        </div>
+
+                        <button class="button" type="submit">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer">
+        <div class="footer__container container">
+            <h1 class="footer__title">Nizar</h1>
+
+            <ul class="footer__list">
+                <li>
+                    <a href="#about" class="footer__link">About</a>
+                </li>
+                <li>
+                    <a href="#work" class="footer__link">Projects</a>
+                </li>
+            </ul>
+
+            <ul class="footer__social">
+                <a href="https://tiktok.com/@zarxdmods" target="_blank" class="footer__social-link">
+                    <i class='bx bxl-tiktok'></i>
+                </a>
+                <a href="https://www.youtube.com/@zarxdmods" target="_blank" class="footer__social-link">
+                    <i class='bx bxl-youtube'></i>
+                </a>
+                <a href="https://www.instagram.com/zarxdmods/" target="_blank" class="footer__social-link">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+            </ul>
+
+            <span class="footer__copy">
+                &copy; Nizar 2023. All Rights reserved.
+            </span>
+        </div>
+    </footer>
+    <!-- SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        const audio = document.querySelector("#audio");
+        setTimeout(() => {
+            Swal.fire({
+                title: "Halo kak! 👋",
+                text: "wkwk,mustahil bisa ketemu kamu lagi..🙂",
+                footer: 'Please click the "Accept" button to continue.',
+                icon: "info",
+                confirmButtonText: "Accept",
+                allowOutsideClick: false,
+            }).then(() => {
+                audio.play();
+            }).catch(() => {
+                audio.play();
+            });
+        }, 1000);
+    </script>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="./assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MIXITUP FILTER ===============-->
+    <script src="./assets/js/mixitup.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
